@@ -13,9 +13,7 @@ function authMiddleware(req, res, next) {
     next();
   }
     catch(err){
-        return res.status(401).json({
-            message: "Unauthorized: Invalid token"
-        });
+        return  res.redirect("/user/login");
     }
 }
 module.exports = authMiddleware;

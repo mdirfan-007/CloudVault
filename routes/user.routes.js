@@ -31,7 +31,8 @@ router.post(
       password: hashedPassword,
     });
 
-    res.json(newUser);
+    // res.json(newUser); 
+    res.redirect("/user/login");
   }
 );
 
@@ -73,7 +74,8 @@ router.post(
     },process.env.JWT_SECRET
   )
   res.cookie("token",token)
-  res.send("Login successful");
+  // res.send("Login successful");
+  res.redirect("/home");
   }
 );
 module.exports = router;

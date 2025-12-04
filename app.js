@@ -16,6 +16,11 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+app.get("/", (req, res) => {
+  res.redirect("/user/register");
+});
+
 app.use("/", indexRouter);
 
 app.use("/user", userRouter);
