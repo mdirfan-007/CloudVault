@@ -39,4 +39,8 @@ Supported File Types
 Student document uploads
 Portfolio file storage
 Secure cloud document management
+<<<<<<< HEAD
 Resume & certificate uploads
+=======
+Resume & certificate uploads
+>>>>>>> 48e9935cbda36a7b4e06644623ac7a2660358622
